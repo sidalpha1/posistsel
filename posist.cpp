@@ -3,7 +3,7 @@
 #include<climits>
 #include<string>
 using namespace std;
- 
+ //class defining the members of the nodes.
 class genesis
 {
     int timestamp;
@@ -70,7 +70,7 @@ int main()
     }
     getch();
 }
-int i, x;
+int j, y;
    char str[100];
 
    cout << " enter a string:\t";
@@ -79,21 +79,21 @@ int i, x;
    cout << "\nPlease choose following options:\n";
    cout << "1 = Encrypt.\n";
    cout << "2 = Decrypt.\n";
-   cin >> x;
-   switch(x)
+   cin >> y;
+   switch(y)
    {
       //first case for encrypting a string
       case 1:
-         for(i = 0; (i < 100 && str[i] != '\0'); i++)
-            str[i] = str[i] + 2; //the key for encryption is 3 that is added to ASCII value
+         for(j = 0; (j < 100 && str[j] != '\0'); j++)
+            str[j] = str[j] + 2; //the key for encryption is 3 that is added to ASCII value
 
          cout << "\nEncrypted string: " << str << endl;
          break;
 
       //second case for decrypting a string
       case 2:
-         for(i = 0; (i < 100 && str[i] != '\0'); i++)
-         str[i] = str[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
+         for(j = 0; (j < 100 && str[j] != '\0'); j++)
+         str[j] = str[j] - 2; 
 
       cout << "\nDecrypted string: " << str << endl;
       break;
